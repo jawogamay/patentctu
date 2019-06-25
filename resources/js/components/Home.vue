@@ -1,45 +1,174 @@
 <template>
-     <div class="container">
-                    <button class="btn btn-primary"  data-toggle="modal" data-target="#myModal">Add Patent</button>
+<v-app>
+
+         <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor">Patent Application</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Patent Application</li>
+                        </ol>
+                    </div>
+                    <div class="col-md-7 col-4 align-self-center">
+                    
+                    </div>
+                </div>
+                 
+
+                <div class="container-fluid">
+                    <button class="btn btn-success success"  data-toggle="modal" data-target="#myModal">Add Patent</button>
                     <br><br>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--green">
-                                <h2 class="number">10,368</h2>
-                                <span class="desc">PATENT REVIEW</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-account-o"></i>
+                               <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-4 col-md-4">
+                        <div class="card card-inverse card-primary">
+                            <a href="/waiting"><div class="card-body">
+                                <div class="d-flex">
+                                    <div class="m-r-20 align-self-center">
+                                        <h1 class="text-white"><i class="ti-user"></i></h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="card-title">Waiting for Approval</h3>
+                                        <h6 class="card-subtitle">1st</h6>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--orange">
-                                <h2 class="number">388,688</h2>
-                                <span class="desc">Search Patent Review</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-shopping-cart"></i>
+                                <div class="row">
+                                    <div class="col-4 align-self-center">
+                                        <h2 class="font-light text-white">98</h2>
+                                    </div>
+                                    <div class="col-8 p-t-10 p-b-20 align-self-center">
+                                        <div class="usage chartist-chart" style="height:65px"></div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--blue">
-                                <h2 class="number">1,086</h2>
-                                <span class="desc">Final Reviews</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-calendar-note"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="statistic__item statistic__item--red">
-                                <h2 class="number">$1,060,386</h2>
-                                <span class="desc">completed</span>
-                                <div class="icon">
-                                    <i class="zmdi zmdi-money"></i>
-                                </div>
-                            </div>
+                            </div></a>
                         </div>
                     </div>
+
+                     <div class="col-lg-4 col-md-4">
+                        <a href="/accepted"><div class="card card-inverse card-danger">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="m-r-20 align-self-center">
+                                        <h1 class="text-white"><i class="ti-user"></i></h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="card-title">Application Accepted</h3>
+                                        <h6 class="card-subtitle">2nd</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 align-self-center">
+                                        <h2 class="font-light text-white">98</h2>
+                                    </div>
+                                    <div class="col-8 p-t-10 p-b-20 align-self-center">
+                                        <div class="usage chartist-chart" style="height:65px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+
+                     <div class="col-lg-4 col-md-4">
+                       <a href="/approved"> <div class="card card-inverse card-info">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="m-r-20 align-self-center">
+                                        <h1 class="text-white"><i class="ti-user"></i></h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="card-title">Application Approved</h3>
+                                        <h6 class="card-subtitle">3rd</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 align-self-center">
+                                        <h2 class="font-light text-white">98</h2>
+                                    </div>
+                                    <div class="col-8 p-t-10 p-b-20 align-self-center">
+                                        <div class="usage chartist-chart" style="height:65px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> </a>
+                    </div>
+
+                     <div class="col-lg-4 col-md-4">
+                       <a href="/submission"> <div class="card card-inverse card-warning">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="m-r-20 align-self-center">
+                                        <h1 class="text-white"><i class="ti-user"></i></h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="card-title">IPOPHIL Submission</h3>
+                                        <h6 class="card-subtitle">4th</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 align-self-center">
+                                        <h2 class="font-light text-white">98</h2>
+                                    </div>
+                                    <div class="col-8 p-t-10 p-b-20 align-self-center">
+                                        <div class="usage chartist-chart" style="height:65px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-4 col-md-4">
+                      <a href="/recieved">  <div class="card card-inverse card-success">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="m-r-20 align-self-center">
+                                        <h1 class="text-white"><i class="ti-thought"></i></h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="card-title">Recieved SOA</h3>
+                                        <h6 class="card-subtitle">5th</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 align-self-center">
+                                        <h2 class="font-light text-white">123</h2>
+                                    </div>
+                                    <div class="col-8 p-t-10 p-b-20 text-right">
+                                        <div class="spark-count" style="height:65px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></a>
+                    </div>
+                     <div class="col-lg-4 col-md-4">
+                       <a href="/completed"> <div class="card card-inverse teal">
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <div class="m-r-20 align-self-center">
+                                        <h1 class="text-white"><i class="ti-thought"></i></h1>
+                                    </div>
+                                    <div>
+                                        <h3 class="card-title">Paid Completed</h3>
+                                        <h6 class="card-subtitle">6th</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4 align-self-center">
+                                        <h2 class="font-light text-white">233</h2>
+                                    </div>
+                                    <div class="col-8 p-t-10 p-b-20 text-right">
+                                        <div class="spark-count" style="height:65px"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> </a>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                  
+                    <!-- Column -->
+                </div>
+                </div>
 
                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -51,7 +180,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <input class="form-control" type="file"><br>
+        <input class="form-control" type="file"><br><br>
         <input class="form-control" type="text" placeholder="Enter project name">
       </div>
       <div class="modal-footer">
@@ -61,5 +190,5 @@
     </div>
   </div>
 </div>
-                </div>
+</v-app>
 </template>
